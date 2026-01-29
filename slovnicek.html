@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivní Slovníček</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" class="header-logo">
+                <span>(Dez)informační <span class="highlight">slovnícheck</span></span>
+            </a>
+        </div>
+
+        <div class="controls">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+
+        <nav class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="slovnicek.html">Slovníček</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="vyukove-materialy.html">Materiály</a></li>
+                <li><a href="hry.html">Hry</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="rozcestnik.html" class="active">Rozcestník</a></li> <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        
+        <section class="controls-panel">
+            
+            <div class="toggle-switch-container">
+                <button class="mode-btn active" data-mode="terms">Obecné pojmy</button>
+                <button class="mode-btn" data-mode="fallacies">Argumentační fauly</button>
+                <div class="mode-highlight"></div>
+            </div>
+
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Hledat pojem nebo v popisu...">
+            </div>
+
+            <div class="alphabet-filter" id="alphabetContainer">
+                </div>
+            
+            <button id="resetFilters" class="btn-reset" style="display: none;">Zobrazit vše</button>
+
+        </section>
+
+        <section id="contentArea" class="blob-universe">
+            </section>
+
+    </main>
+
+    <button id="theme-toggle" class="theme-toggle floating-btn">🌙</button>
+
+    <script src="dictionary-data.js"></script> <script src="script.js"></script>
+</body>
+</html>

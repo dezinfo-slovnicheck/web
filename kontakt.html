@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | (Dez)informační slovnícheck</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" class="header-logo">
+                <span>(Dez)informační <span class="highlight">slovnícheck</span></span>
+            </a>
+        </div>
+
+        <div class="controls">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+
+        <nav class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="slovnicek.html">Slovníček</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="vyukove-materialy.html">Materiály</a></li>
+                <li><a href="hry.html">Hry</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="rozcestnik.html">Rozcestník</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li> </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="card hero-card span-4 contact-hero">
+            <div class="contact-hero-content">
+                <h1>Ozvěte se nám</h1>
+                <p>Máte dotazy k naší práci? Neváhejte a nechte nám vzkaz. Budeme rádi za vaše nápady, připomínky i pozdravy.</p>
+            </div>
+            <div class="contact-hero-image">
+                <img src="https://d35666577a.cbaul-cdnwnd.com/73803269aab4c81b82c674cc7d598ffb/200000087-b897cb897f/20240816075926_IMG_2718.webp?ph=d35666577a" alt="Náš tým">
+            </div>
+        </div>
+
+        <section class="bento-grid section-spacer">
+            
+            <div class="card contact-info-card span-2 scroll-card">
+                <h3>Kontaktní údaje</h3>
+                
+                <div class="contact-item">
+                    <div class="icon-box">✉️</div>
+                    <div class="contact-text">
+                        <span class="label">E-mail</span>
+                        <a href="mailto:dezinformacnislovnicek@gmail.com">dezinformacnislovnicek@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-box">📸</div>
+                    <div class="contact-text">
+                        <span class="label">Instagram</span>
+                        <a href="https://instagram.com/dezinfo_slovnicheck" target="_blank">@dezinfo_slovnicheck</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card form-card span-2 scroll-card">
+                <h3>Napište nám</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Jméno a příjmení</label>
+                        <input type="text" id="name" placeholder="Váš jméno">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="vas@email.cz">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva</label>
+                        <textarea id="message" rows="4" placeholder="Co máte na srdci?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Odeslat zprávu</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <button id="theme-toggle" class="theme-toggle floating-btn">🌙</button>
+
+    <footer class="bento-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h4>(Dez)informační slovnícheck</h4>
+                <p>© 2025</p>
+            </div>
+            <div class="footer-links">
+                <a href="kontakt.html">Kontakt</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="rozcestnik.html">Užitečné odkazy</a>
+            </div>
+            <div class="footer-contact">
+                dezinformacnislovnicek@gmail.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Děkujeme za zprávu! (Toto je demo ukázka)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

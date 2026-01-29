@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hry | (Dez)informační slovnícheck</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" class="header-logo">
+                <span>(Dez)informační <span class="highlight">slovnícheck</span></span>
+            </a>
+        </div>
+
+        <div class="controls">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+
+        <nav class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="slovnicek.html">Slovníček</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="vyukove-materialy.html">Materiály</a></li>
+                <li><a href="hry.html">Hry</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="rozcestnik.html" class="active">Rozcestník</a></li> <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="card text-card span-4">
+            <h1>Interaktivní hry</h1>
+            <p>Nejlepší způsob, jak pochopit dezinformace, je vyzkoušet si je "nanečisto". Tyto aktivity jsou zaměřené na spolupráci, komunikaci a práci s textem.</p>
+        </div>
+
+        <div id="games-grid" class="bento-grid section-spacer">
+            </div>
+
+    </main>
+
+    <div id="game-modal" class="modal-overlay">
+        <div class="modal-content scroll-card">
+            <button class="close-modal" aria-label="Zavřít">&times;</button>
+            
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+            </div>
+            
+            <div class="modal-image-wrapper">
+                <img id="modal-image" src="" alt="Ilustrace hry">
+            </div>
+            
+            <div class="modal-body" id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle floating-btn">🌙</button>
+
+    <footer class="bento-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h4>(Dez)informační slovnícheck</h4>
+                <p>© 2025</p>
+            </div>
+            <div class="footer-links">
+                <a href="kontakt.html">Kontakt</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="rozcestnik.html">Užitečné odkazy</a>
+            </div>
+            <div class="footer-contact">
+                dezinformacnislovnicek@gmail.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="games-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
